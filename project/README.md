@@ -36,7 +36,7 @@ To construct the two containers, one with the MySQL database and the other with 
 container_id=$(docker ps -qf "name=^max-service$")
 docker exec -it $container_id /bin/bash
 ```
-to execute the container and access de terminal inside the docker with the python project. (The creation of the database can take arround 1 minute)
+to execute the container and access the terminal inside the docker with the python project. (The creation of the database can take arround 1 minute)
 
 Now, in this new terminal run:
 ```
@@ -48,7 +48,7 @@ this runs the CLI in which the user can make the following actions:
 - **Add new table from gzip file** -- Adds a new table from path of the file; it is recomended to add new files into `DB/data/` folder. To start it is *necesary* to add the tree starting tables in the folder `DB/data/`.
 - **See table** -- Print a preview of the desired table
 - **See artists starting with ___** -- Shows artists starting with the input of the user
-- **See genres containing letter ___** --Shows genres containing the input of the user
+- **See genres containing letter ___** -- Shows genres containing the input of the user
 - **See the most popular genres (among artists)** -- Shows the most popular genres among the artists
 - **See artists for some genre** -- Shows 10 random artists corresponding to an input genre
 - **Quit** -- Quit the app
