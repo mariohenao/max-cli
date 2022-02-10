@@ -1,0 +1,25 @@
+version: "3.4"
+networks:
+  maxnetwork:
+      name: maxnetwork.localhost
+services:
+  max-mysql:
+    image: mysql
+    container_name: max-mysql
+    environment:
+      - MYSQL_DATABASE=max-db
+      - MYSQL_ROOT_PASSWORD=password
+    networks:
+      default:
+      maxnetwork:
+    ports:
+      - "3307:3306"
+  max-service:
+    build: .
+    image: max-service:latest
+    container_name: max-service
+    networks:
+      default:
+      maxnetwork:
+    volumes:
+      - .:/opt/app
