@@ -27,7 +27,7 @@ The project is organized as follows:
 `DB/connection.py`: Connects to the database and run SQL queries on the data.
 
 # How to use
-After cloning the repository, in the main folder run:
+After cloning the repository, in the main folder `max-cli/project/` run:
 ```
 docker-compose up -d --build
 ```
