@@ -36,7 +36,7 @@ To construct the two containers, one with the MySQL database and the other with 
 container_id=$(docker ps -qf "name=^max-service$")
 docker exec -it $container_id /bin/bash
 ```
-to execute the container and access the terminal inside the docker with the python project. (The creation of the database can take arround 1 minute)
+to execute the container and access the terminal inside the docker with the python project. (The creation of the database can take arround 1-3 minutes, please wait and then run the app)
 
 Now, in this new terminal run:
 ```
